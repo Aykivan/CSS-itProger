@@ -1,0 +1,74 @@
+.firstselector {
+    color: red;
+}
+
+#string-id {
+    color: green;
+}
+
+div p strong,
+div em {
+    color: blue;
+}
+
+.main-link {
+    color: red;
+    text-decoration: none;
+}
+
+.main-link:hover {
+    color: blue;
+    text-decoration: underline;
+    text-decoration-color: red;
+    cursor: pointer;
+}
+
+.main-link:active {
+    text-decoration: line-through;
+}
+
+.main-link:visited {
+    text-decoration: line-through;
+    color: grey;
+}
+
+input {
+    color: blue;
+}
+
+input:focus {
+    color: red;
+}
+
+p.text:not(:empty) {
+    color: grey;
+}
+
+p.text:empty::after {
+    content: attr(title);
+}
+
+#some-id::before {
+    content: "Yo";
+    color: grey;
+    text-decoration: line-through;
+}
+
+/* К объектам - p, с классом - text, псевдоклассом - empty (пустые ячейки) будет применен следующий стиль*/
+
+p.main-link::first-letter {
+    color: green;
+}
+
+/*Part5*/
+
+#Part5-img,
+body {
+    /* background-color: #144665;
+    color: aliceblue;
+    background-image: url("https://wp-s.ru/wallpapers/1/24/495994728243395/zakat-na-xolme-vechernij-prichal.jpg");
+    background-repeat: no-repeat;
+    background-position: center; */
+    color: aliceblue;
+    background: #144665 url("https://i.pinimg.com/originals/c7/8a/1f/c78a1ff26086681a2712a0477504b785.jpg") no-repeat center;
+}

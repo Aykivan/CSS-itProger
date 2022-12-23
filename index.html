@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS | itProger</title>
+    <!-- <style>
+        strong {
+            color: blue;
+        }
+    </style>-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>CSS перый видео-курс</h1>
+    <h2>1. Способы подключения CSS стилей</h2>
+    <ol>
+        <li>В первом случае мы прописываем style, как атрибут к тегу p, данный способ считается не очень хорошим, и
+            подходит только в том случае, если к объекту необходимо применить лишь несколько стилей.
+            <br>
+            Данный способ является лучшем, чем 1, однако не идеальным, так как и html и CSS находятся в одном файле.
+        </li>
+        <li>Во втором случае, мы добавляем атрибут style в шапку - head и добавляем туда: "тег { прописываем стили сюда
+            }"</li>
+        <li>Мы прописываем в шапке html тег - link, с атрибутами rel="stylesheet" href="адресс CSS стилей", в которой
+            уже и хранятся все стли. Самый правильный способ.</li>
+    </ol>
+    <!-- style="color: red" -->
+
+    <h2>2. Селекторы выбора элемента</h2>
+    <p>
+        Селектор - элемент определяющий область действия стилей CSS. Это могут быть все теги HTML.
+    </p>
+    <ul>
+        Селекторы выбора:
+        <li>Тег - можно указать тег, к которому будут применятся стили</li>
+        <li>
+            Классы - <span class="firstselector">class</span> - мы прописываем его в виде атрибута и присваеваем ему
+            определенное значение, в CSS мы указываем .имя класса к которым будут применятся стили. Один и тот же
+            класс может быть внедрен во все необходимые теги.
+        </li>
+        <li>
+            Идентификатор - <string id="string-id">id</string> - в отличие от class он может быть только один на всей
+            странице. Каждому элементу можно присвоить свой идентификатор с уникальным именем, однако оно не должно
+            повторятся. Это позволяет делать более точечную стилизацию. Для работы с id в CSS необходимо обращатся к ним
+            начиная с #имя id.
+        </li>
+        <li>
+            Вложенные селекторы выбора - div p strong - это значит, что ко всем тегам - strong, которые находятся
+            в абзацах p блоках, которые в свою очередь находятся в блоке div, будет применен стиль, который мы
+            зададим. Обращатся к ним в CSS необходимо по такому же принципу.
+        </li>
+        <li>Множественный выбор - div p strong, div em - через запятую можно перечислить все селекторы к которым мы
+            хотим применить тот или иной стиль, будь то .class, #id или любой другой тег.</li>
+    </ul>
+    <div>
+        <p>
+            <strong>Lorem ipsum</strong> dolor sit amet consectetur adipisicing elit. Aliquam modi earum, obcaecati
+            voluptatem dolorem nostrum distinctio vero inventore cumque ratione blanditiis eos suscipit.
+            <strong>Officia facere</strong> voluptatem distinctio, ab reprehenderit nobis!
+        </p>
+        <em>Lorem ipsum</em> dolor sit amet, consectetur adipisicing elit. Nemo quis laboriosam aut. Illum, in. Aliquid
+        cumqueet, voluptates <em>obcaecati</em> voluptatum tempore reprehenderit nisi minima sequi nihil, neque
+        doloremque. Voluptatibus, a.
+    </div>
+
+    <h2>3. Псевдоклассы и псевдоэлементы</h2>
+    <p>
+        Псевдокласс - различное состояние обьекта. Они ставятся через одно двоеточие, пример: .main-link:
+    </p>
+    <a href="#" class="main-link">Ссылка</a>
+    <p class="main-link">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aliquid laudantium blanditiis ipsum tempore quae
+        quo sunt, facere voluptatum ad illo consequuntur molestiae vitae eius, doloremque harum veritatis sint.
+        Repellendus!
+    </p>
+
+    <input type="text" placeholder="Введите текс">
+
+    <p class="text">Simple</p>
+    <p class="text" title="Somethink"></p>
+
+    <div id="some-id">Some text</div>
+
+    <ul>
+        Свойства:
+        <li>
+            text-decoration - варианты подчеркивания текста:
+            <ul>
+                <li>line-through - перечеркнутый текст</li>
+                <li>none - без подчеркивания</li>
+                <li>overline - подчеркнутый над текстом</li>
+                <li>underline - подчеркнутый под текстом</li>
+            </ul>
+        </li>
+        <li>text-decoration-color - выбор цвета линии</li>
+        <li>cursor - выбор курсоров</li>
+        <li>focus - срабатывает пока курсор находится в поле</li>
+        <li>color - можно задавать цвета</li>
+        <li>content - указыываем, какой текст будет выводится до или после объекта,
+            обычно используется с псевдоклассом after или before</li>
+    </ul>
+
+    <ul>
+        Псевдоклассы:
+        <li>hover - стили будут применятся при наведении на объект</li>
+        <li>active - срабатывает при нажимании на что-либо</li>
+        <li>
+            visited - псевдокласс применяемый в основном к ссылкам, по которым уже
+            мы переходили. В основном прописывается только цвет
+        </li>
+        <li>
+            disabled - применяет стили к блокам, которые имеют атрибут disabled, то есть все поля, которые не активн
+        </li>
+        <li>
+            enabled - работает аналогично с disabled, но со всеми активными
+            полями
+        </li>
+        <li>
+            required - работает аналогично с двумя предыдущими, пометка - обязательно к заполнению
+        </li>
+        <li>empty - пустые абзатцы</li>
+        <li>not - некое усоловие, которое необходимо дописать в ()</li>
+    </ul>
+
+    <ul>
+        Псевдоэлементы - элементы, с помощью которых мы можем работать с
+        каким-то определенным текстом элемента внутри html обьекта. Они
+        прописываются с помощью ::
+        <li>
+            after - выводит некий текст, который будет находится сразу после
+            объекта, его нельзя выделить
+            <ul>
+                <li>attr ( ) - позволяет выводить значения атрибутов</li>
+            </ul>
+        </li>
+        <li>before - работает аналогично с after, но выводит текст до
+            обьекта</li>
+        <li>first-letter/line - позволяет взаимодействовать с первым
+            элементом/строкой блока</li>
+        <li>first/last-of-type - работает с первым/последним элементом данного
+            типа</li>
+    </ul>
+
+    <div id="Part5-img">
+        <h2>4. Работа с фоновыми изображениями</h2>
+        <p>
+
+        </p>
+        <ul>
+            Свойства:
+            <li>background-color - с его помощью мы можем задавать цвет заднего фона</li>
+            <li>background-image - пзволяет воспользоваться методом url()
+                и установить фоновую картинку</li>
+            <li>background-repeat - устанавливаем повторение картинки</li>
+            <li>background-position - указываем позицию картинки</li>
+            Что бы не прописывать все эти свойства, можно сократить запись до background
+            и подставлять через пробел значения предидущих параметров
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
