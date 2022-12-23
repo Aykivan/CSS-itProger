@@ -61,8 +61,8 @@ p.main-link::first-letter {
 }
 
 /*Part5*/
-
-#Part5-img,
+/* 
+#Part5-img, */
 body {
     /* background-color: #144665;
     color: aliceblue;
@@ -70,5 +70,67 @@ body {
     background-repeat: no-repeat;
     background-position: center; */
     color: aliceblue;
-    background: #144665 url("https://i.pinimg.com/originals/c7/8a/1f/c78a1ff26086681a2712a0477504b785.jpg") no-repeat center;
+    background: #192e3b url("https://i.pinimg.com/originals/69/1f/1e/691f1e314427a6c4d83370badc03ebb8.jpg") no-repeat center top;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* работа с текстом */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;700&display=swap');
+
+.main-text {
+    background: #192e3b;
+    color: white;
+    text-align: justify;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    font-family: 'Josefin Sans', sans-serif;
+
+    text-transform: lowercase;
+    word-spacing: 10px;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+/* Стили для блоков */
+
+#block,
+#string {
+    background: #192e3b;
+    height: 140px;
+    width: 140px;
+    border: 2px solid silver;
+    border-bottom: dashed silver;
+    border-right-style: dashed;
+    border-radius: 15px 50% 25px;
+    opacity: 0.6;
+    margin: 20px;
+    padding: 10px;
+
+    display: block;
+}
+
+/* Позиционирование блоков */
+
+.block2 {
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    background: #192e3b;
+    border: 2px solid silver;
+}
+
+#first {
+    float: left;
+}
+
+#second {
+    float: left;
+}
+
+#linkweb6 a {
+    color: rgb(190, 211, 255);
 }

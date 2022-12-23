@@ -145,24 +145,123 @@
             типа</li>
     </ul>
 
-    <div id="Part5-img">
-        <h2>4. Работа с фоновыми изображениями</h2>
-        <p>
+    <h2>4. Работа с фоновыми изображениями</h2>
+    <ul>
+        Свойства:
+        <li>background-color - с его помощью мы можем задавать цвет заднего фона</li>
+        <li>background-image - пзволяет воспользоваться методом url()
+            и установить фоновую картинку</li>
+        <li>background-repeat - устанавливаем повторение картинки</li>
+        <li>background-position - указываем позицию картинки</li>
+        Что бы не прописывать все эти свойства, можно сократить запись до background
+        и подставлять через пробел значения предыдущих параметров
+        <li>height - высота, 100vh - 100% высота экрана</li>
+        <li>background-size - задает размер фонового изображения, используя
+            cover - растянет его на весь экран</li>
+    </ul>
 
-        </p>
-        <ul>
-            Свойства:
-            <li>background-color - с его помощью мы можем задавать цвет заднего фона</li>
-            <li>background-image - пзволяет воспользоваться методом url()
-                и установить фоновую картинку</li>
-            <li>background-repeat - устанавливаем повторение картинки</li>
-            <li>background-position - указываем позицию картинки</li>
-            Что бы не прописывать все эти свойства, можно сократить запись до background
-            и подставлять через пробел значения предидущих параметров
-            <li></li>
-            <li></li>
-        </ul>
-    </div>
+
+    <h2>5. Работа с текстом</h2>
+    <p class="main-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam consequuntur hic dicta expedita animi alias
+        culpa illo? Dolores, rerum accusamus voluptatum recusandae, iure obcaecati, unde eum pariatur animi tempore
+        distinctio!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam consequuntur hic dicta expedita animi alias
+        culpa illo? Dolores, rerum accusamus voluptatum recusandae, iure obcaecati, unde eum pariatur animi tempore
+        distinctio!
+    </p>
+
+    <ul>
+        Свойства:
+        <li>text-align - выравнивание текста
+            <ul>
+                <li>justify - от края до края</li>
+            </ul>
+        </li>
+        <li>font-size - размер текста в px, по умолчанию - 14 px. Так же есть такие
+            единицы измерения, как - em - относительные значения. (2em - 28px)
+        </li>
+        <li>font-style - наклон текста (курсив)</li>
+        <li>font-weight - толщина текста</li>
+        <li>font-family - задаем шрифт, работает совместно с гугл шрифтами</li>
+        <li>text-transform - задает регистр текста
+            <ul>
+                <li>uppercase - все буквы большие</li>
+                <li>lowercase - все буквы маленькие</li>
+                <li>capitalize - каждое слово с большой буквы</li>
+            </ul>
+        </li>
+        <li>word-spacing - расстояние между словами</li>
+        <li>letter-spacing - расстояние между символами (+ и -)</li>
+        <li>line-height - расстояние между строками</li>
+    </ul>
+
+    <h2>6. Стили для блоков</h2>
+    <div id="block" title="Форма лемона, похож?)">Lemon</div>
+    <span id="string">No lemon</span>
+
+    <ul>
+        Свойства:
+        <li>border - обводка, если я хочу довбавить обводку у одной из сторон, тогда
+            необходимо использовать border-top/bottom/left/right. Если же хочу
+            добавить ко всем сторонам кроме одной, необходимой стороне присваиваю
+            значение 0.
+            <ul>
+                <li>solid - сплошная</li>
+                <li>dashed - прерывистая</li>
+                <li>dotted - кружочками</li>
+            </ul>
+        </li>
+        <li>border-radius - задает скругление всех углов по очереди</li>
+        <li>opacity - прозрачность, доступен для всех элементов, по умолчанию раввен 1</li>
+        <li>margin - отступ, так же можно добавить к определенной стороне или 2 значения</li>
+        <li>padding - внутренние отступы</li>
+        По умолчанию во всех браузерах стоят свои отступы. Чтобы их убрать необходимо задавать
+        значения margin и padding для блока, равное 0.
+        <li>display - задает значение block или inline, позволяет заставить строчные
+            элементы вести себя, как блочные и принимать настройки высоты и ширины.
+        </li>
+
+    </ul>
+
+    <h2>6. Позиционирование блоков</h2>
+    <div id="first" class="block2"></div>
+    <div id="second" class="block2"></div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+    <ul>
+        Свойства:
+        <li>float - позволяет пиозиционировать блоки</li>
+        <li>
+            position
+            <ul>
+                <li>relative - позволяет смещать блок (left/right/
+                    bottom/top)</li>
+                <li>absolute - позволяет двигать блок, поверх других</li>
+                <li>fixed - фиксирует блок, он не смещается относительно первоначального
+                    экрана</li>
+            </ul>
+        </li>
+        <li>z-index - позволяет менять приоритет отображения объектов.</li>
+    </ul>
+
+
+    <span id="linkweb6">
+        Реализуем структуру веб-сайта, однако он будет в другом файле.
+        <br><a href="web6/web6.html" target="blank">Ссылка</a> на результаты.
+    </span>
+
+    <h2>7. Работа со списками</h2>
+
+    <ul>
+        Свойства:
+        <li>list-style: none - убирает всю нумерацию, кружочки и тд.</li>
+        <li>#nav li display: inline; - превращаем элементы li в строки</li>
+    </ul>
+    <span>Результаты работы со списками представлены по ссыле для реализации структуры веба.</span>
+
+    <h2>The end.</h2>
 
 </body>
 
